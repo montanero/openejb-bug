@@ -18,8 +18,15 @@ The second call to "select" seems to completely ignore the fact it is meant to b
 
 
 ## To reproduce using tomee:
-mvn clean install
+    mvn clean install
 
 ## To reproduce using owb:
-mvn clean install -P owb
+    mvn clean install -P owb
+
+## To run tests using weld
+(errors will not happen)
+
+    mvn clean install -P weld
+
+
 
