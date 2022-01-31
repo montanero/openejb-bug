@@ -1,4 +1,4 @@
-package de.micronova.openejb;
+package de.micronova.cdibug;
 
 public abstract class Food {
 

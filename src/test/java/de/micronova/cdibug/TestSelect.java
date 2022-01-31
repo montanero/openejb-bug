@@ -1,14 +1,13 @@
-package de.micronova.openejb;
+package de.micronova.cdibug;
 import javax.enterprise.inject.Any;
 import javax.enterprise.inject.Instance;
 import javax.inject.Inject;
 
-import de.micronova.openejb.annotations.FoodQualifier;
-import de.micronova.openejb.annotations.FoodType;
-import de.micronova.openejb.annotations.LiteralFoodType;
-import de.micronova.openejb.annotations.LiteralTasteType;
-import de.micronova.openejb.annotations.TasteQualifier;
-import de.micronova.openejb.annotations.TasteType;
+import de.micronova.cdibug.annotations.FoodQualifier;
+import de.micronova.cdibug.annotations.FoodType;
+import de.micronova.cdibug.annotations.LiteralFoodType;
+import de.micronova.cdibug.annotations.LiteralTasteType;
+import de.micronova.cdibug.annotations.TasteType;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.ShrinkWrap;

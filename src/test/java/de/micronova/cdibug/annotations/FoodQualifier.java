@@ -1,6 +1,5 @@
-package de.micronova.openejb.annotations;
+package de.micronova.cdibug.annotations;
 
-import javax.enterprise.util.AnnotationLiteral;
 import javax.inject.Qualifier;
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
@@ -17,6 +16,6 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Documented
 @Retention(RUNTIME)
 @Target({ FIELD, TYPE, METHOD, CONSTRUCTOR, PARAMETER })
-public @interface TasteQualifier {
-    TasteType value();
+public @interface FoodQualifier {
+    FoodType value();
 }

@@ -1,4 +1,4 @@
-package de.micronova.openejb.annotations;
+package de.micronova.cdibug.annotations;
 
 public enum FoodType {
     VEGETABLE,
