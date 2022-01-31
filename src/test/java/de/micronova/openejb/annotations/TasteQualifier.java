@@ -19,17 +19,4 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Target({ FIELD, TYPE, METHOD, CONSTRUCTOR, PARAMETER })
 public @interface TasteQualifier {
     TasteType value();
-
-    final class Literal extends AnnotationLiteral<TasteQualifier> implements TasteQualifier {
-        private final TasteType value;
-
-        public Literal(TasteType value) {
-            this.value = value;
-        }
-
-        @Override
-        public TasteType value() {
-            return value;
-        }
-    }
 }

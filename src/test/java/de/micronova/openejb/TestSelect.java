@@ -50,7 +50,7 @@ public class TestSelect {
     {
         Instance<Food> vegetables = allTypesOfFood.select(new LiteralFoodType(FoodType.VEGETABLE));
         Assert.assertTrue(vegetables.isUnsatisfied());
-        Instance<Food> jummyVegetables = vegetables.select(new TasteQualifier.Literal(TasteType.JUMMY));
+        Instance<Food> jummyVegetables = vegetables.select(new LiteralTasteType(TasteType.JUMMY));
         Optional<Food> someJummyVegetable = jummyVegetables.stream().findAny();
         Assert.assertFalse(someJummyVegetable.isPresent());
 
